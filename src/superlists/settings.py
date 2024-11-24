@@ -145,3 +145,9 @@ LOGGING = {
         "root": {"handlers": ["console"], "level": "INFO"},
     },
 }
+
+EMAIL_HOST = "sandbox.smtp.mailtrap.io"
+EMAIL_HOST_USER = "7186edc2d83a17"
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_PORT = 2525
+EMAIL_USE_TLS = True
